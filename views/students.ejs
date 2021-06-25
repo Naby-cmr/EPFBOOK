@@ -1,0 +1,17 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="/style.css"></link>
+    <script type="text/javascript" src="/students.js"></script>
+  </head>
+  <body>
+    <main>
+    <h1>Students</h1>
+    <ul class="students">
+    <% students.forEach(function(student, index) { %>
+      <li><a href="/students/<%=index%>"> <%= student.name %></a> | <%= student.school %></li>
+    <%})%>
+    </ul>
+    <button id="test">Test</button>
+   </main>
+  </body>
+</html>

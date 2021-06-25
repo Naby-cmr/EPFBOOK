@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="/style.css"></link>
+    <script type="text/javascript" src="/students.js"></script>
+  </head>
+  <body>
+    <main>
+    <h1>Students details</h1>
+    <ul class="students">
+    <% students.forEach(function(student, index) { %>
+      <li><a href="/students/<%=index%>"> <%= student.name %></a> | <%= student.school %></li>
+    <%})%>
+    </ul>
+    <button id="test">Test</button>
+   </main>
+  </body>
+
+  <form method="put">
+    <label for="name">Name</label>
+    <input type="text" name="name" required/>
+    <label for="school">School</label>
+    <input type="text" name="school" required />
+    <button type="submit">Update</button>
+</form>
+</form>
+</html>
+ 
+    
+<form action="" method="put">
+  <div>
+  <labelfor="name">Name:;</label>
+          <% students.forEach(function(student, index) { %>
+  <inputtype="text"id="name"value="<%= student.name %>">
+          <%})%>
+  </div>
+  <div>
+  <labelfor="school">School:</label>
+          <% students.forEach(function(student, index) { %>
+  <inputtype="text"id="school"value="<%= student.school %>">
+          <%})%>
+  </div>
+  <divclass="button">
+  <buttontype="submit">Create</button>
+

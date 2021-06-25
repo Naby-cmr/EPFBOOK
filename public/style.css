@@ -1,0 +1,14 @@
+body {
+  background-color: cornflowerblue;
+}
+main {
+  max-width: 800px;
+  margin: auto;
+}
+
+/* Hide long text on mobile phones*/
+@media (max-width: 1000px) {
+  p.long-text {
+    display: none;
+  }
+}
